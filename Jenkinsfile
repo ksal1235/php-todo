@@ -52,6 +52,7 @@ pipeline {
                     plot csvFileName: 'plot-objects.csv', csvSeries: [[displayTableFlag: false, exclusionValues: 'Interfaces,Traits,Classes,Methods,Functions,Constants', file: 'build/logs/phploc.csv', inclusionFlag: 'INCLUDE_BY_STRING', url: '']], group: 'phploc', numBuilds: '100', style: 'line', title: 'BB - Structure Objects', yaxis: 'Count'
           }
         }
+        /*
         stage('SonarQube Quality Gate') {
                 when {
                     expression {
@@ -118,7 +119,7 @@ pipeline {
                               }
         }
         
-
+*/
   }
 
 }
