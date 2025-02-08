@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/mimi-netizen/php-todo.git'
+                git branch: 'main', url: 'https://github.com/ksal1235/php-todo.git'
             }
         }
 
